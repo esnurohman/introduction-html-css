@@ -150,11 +150,6 @@ ul {
   justify-content: start;
   align-items: center;
 }
-.ul-sosmed-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .ul-sosmed  .icon-content {
   margin: 0 10px;
   position: relative;
@@ -212,4 +207,49 @@ ul {
   z-index: 100;
   color: #f2e9d8;
   font-weight: 100;
+}
+.ul-sosmed-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ul-sosmed-footer  .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+.ul-sosmed-footer  .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1B4242;
+  color: #f2e9d8;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.ul-sosmed-footer  .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.ul-sosmed-footer  .icon-content .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  transition: all 0.3s ease-in-out;
+}
+.ul-sosmed-footer  .icon-content .link svg {
+  width: 20px;
+  height: 20px;
+}
+.ul-sosmed-footer .icon-content .link:hover {
+  fill: #b0bd9e;
 }
