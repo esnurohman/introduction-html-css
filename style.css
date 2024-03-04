@@ -44,8 +44,13 @@ body  {
   color: #b0bd9e;
   
 }
-
-.home {
+@media (max-width: 768px) {
+  /* Styles to hide the element on mobile view */
+  .navbar a {
+    display: none;
+  }
+}
+#home {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -53,6 +58,7 @@ body  {
   background-image: url('img/sawah.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 /* audio {
   visibility: visible;
@@ -252,4 +258,16 @@ ul {
 }
 .ul-sosmed-footer .icon-content .link:hover {
   fill: #b0bd9e;
+}
+
+#about {
+
+}
+
+#manfaat {
+  background: rgb(81,98,79 , 0.4);
+}
+
+#galeri {
+  
 }
